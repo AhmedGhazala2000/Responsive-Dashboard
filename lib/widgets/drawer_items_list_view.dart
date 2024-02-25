@@ -28,12 +28,18 @@ class _DrawerItemsListViewState extends State<DrawerItemsListView> {
       itemBuilder: (context, index) {
         return GestureDetector(
             onTap: () {
-              currentIndex = index;
-              setState(() {});
+              if (currentIndex != index) {
+                setState(() {
+                  currentIndex = index;
+                });
+              }
             },
-            child: DrawerItem(
-              drawerItem: items[index],
-              isSelected: currentIndex == index,
+            child: Padding(
+              padding: const EdgeInsets.only(top: 8),
+              child: DrawerItem(
+                drawerItem: items[index],
+                isSelected: currentIndex == index,
+              ),
             ));
       },
     );

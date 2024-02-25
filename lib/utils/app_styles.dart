@@ -93,9 +93,6 @@ abstract class AppStyles {
   }
 }
 
-// sacleFactor
-// responsive font size
-// (min , max) fontsize
 double getResponsiveFontSize(context, {required double fontSize}) {
   double scaleFactor = getScaleFactor(context);
   double responsiveFontSize = fontSize * scaleFactor;
