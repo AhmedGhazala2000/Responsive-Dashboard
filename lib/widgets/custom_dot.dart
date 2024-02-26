@@ -6,7 +6,8 @@ class CustomDot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 300),
       width: isActive ? 32 : 8,
       height: 8,
       decoration: BoxDecoration(

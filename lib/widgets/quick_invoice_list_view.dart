@@ -23,6 +23,11 @@ class QuickInvoiceListView extends StatelessWidget {
       subTitle: 'Madraniadi20@gmail',
       image: Assets.imagesAvatar2,
     ),
+    UserInfoModel(
+      title: 'Josua Nunito',
+      subTitle: 'JoshNunito@gmail.com',
+      image: Assets.imagesAvatar3,
+    ),
   ];
 
   @override

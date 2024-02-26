@@ -52,10 +52,9 @@ class MyCard extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            const Flexible(
-                child: SizedBox(
-              height: 24,
-            ))
+            SizedBox(
+              height: MediaQuery.sizeOf(context).width < 400 ? 10 : 24,
+            )
           ],
         ),
       ),
